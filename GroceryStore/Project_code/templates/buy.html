@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Buy </title>
+</head>
+<body>
+<h3> {{category.category_name}} : {{product.product_name}} </h3>
+<div>  Available Quantity : {{product.product_quantity}} {{product.product_unit}}
+<br>   Price: Rs.{{product.product_rate}}
+ </div>
+    <form method="POST" action="{{url_for('buy',id=product.product_id,user_id=user_id)}}"> 
+      <label for="quantity">Quantity: </label>
+      <input type="number" id='quantity' name="Quantity" step="any"> {{product.product_unit}}
+      <br>
+      <input type="submit" value="Buy">
+    </form>
+</body>
+</html>

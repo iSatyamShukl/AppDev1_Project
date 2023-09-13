@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+</head>
+<body>
+    <h2> Category-wise distribution of Products purchased: </h2>
+    {% for category in categories %}
+        <img src="static/category_graphs/{{ category.category_name }}.png" alt="{{ category.category_name }} Graph">
+    {% endfor %}
+</body>
+</html>

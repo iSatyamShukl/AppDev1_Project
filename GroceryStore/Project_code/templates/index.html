@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid">
+    <img src="{{url_for('static',filename='Grocery_logo.jpg')}}" class="img-fluid" alt='Grocery-Store_logo'>
+      <div class="d-grid gap-2">
+        <a href="{{url_for('mlogin')}}" <button class="btn btn-primary" type="button"> Manager </button>
+        <a href="{{url_for('Inventory')}}" <button class="btn btn-primary" type="button">User</button>
+      </div>
+      
+
