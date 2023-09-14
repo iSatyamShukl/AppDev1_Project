@@ -8,4 +8,6 @@ run "pip install -r requirements.txt"
 
 run "python Project_code/app.py"
 
-##Also all templates and static are in the root folder i.e. "Project_code"
+##Also all the templates and static folder are in the root directory of "Project_code"
+
+# {{ Manager credentials:  username-manager1  password-pass1  }}
